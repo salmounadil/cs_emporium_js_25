@@ -164,4 +164,240 @@ vari.divproduct1.style.overflow ='hidden'
 
 })
 
+// Caroussel
+
+let div1 = document.getElementsByClassName('div1caroussel')[0]
+let div2 = document.getElementsByClassName('div2caroussel')[0]
+let div3 = document.getElementsByClassName('div3caroussel')[0]
+let div4 = document.getElementsByClassName('div4caroussel')[0]
+let puce1 = document.getElementsByClassName('puce1')[0]
+let puce2 = document.getElementsByClassName('puce2')[0]
+let puce3 = document.getElementsByClassName('puce3')[0]
+let puce4 = document.getElementsByClassName('puce4')[0]
+let divscaroussel = document.querySelectorAll('.caroussel > div')
+let puces = document.querySelectorAll('.puces > div')
+
+
+// console.log(div1.previousElementSibling == null);
+
+// setInterval(myCallback, 500, 'Parameter 1', 'Parameter 2');
+
+// ;
+// let slider = ()=>{
+    
+     
+//    divscaroussel.forEach(element => {
+    
+//        if (element.nextElementSibling != null) {
+        
+//             element.classList.remove('visible')
+//         element.classList.add('invisible')
+//         element.nextElementSibling.classList.add('visible')
+//         element.nextElementSibling.classList.remove('invisible')
+//         console.log('pas dernier');
+        
+        
+        
+//        } ;
+//        if (element.nextElementSibling == null) {
+        
+//             element.classList.remove('visible')
+//         element.classList.add('invisible')
+//         div1.classList.remove('invisible')
+//         div1.classList.add('visible')
+//         console.log('dernier');
+       
+        
+//     }
+//        })
+       
+    
+   
+//     }
+
+// setInterval(slider, 1000);
+
+let tab = [1,2,3]
+
+// let log =()=>{
+//     i.forEach(element => {
+//         setTimeout(() => {
+//             console.log(element);
+//         }, 1000);
+//     });
+// }
+// setInterval(() => {
+//     log()
+// }, 500);
+
+// slider()
+let i = 0
+
+let test = ()=>{
+    if (divscaroussel[i].nextElementSibling != null) {
+        divscaroussel.forEach(element => {
+            element.classList.remove(('visible'))
+            element.classList.add(('invisible'))
+            puces.forEach(element => {
+                element.classList.remove('pucebleu')
+            });
+        });
+        divscaroussel[i].classList.remove('visible')
+        divscaroussel[i].classList.add('invisible')
+        puces[i].classList.remove('pucebleu')
+        divscaroussel[i].nextElementSibling.classList.remove('invisible')
+        divscaroussel[i].nextElementSibling.classList.add('visible')
+        puces[i].nextElementSibling.classList.add('pucebleu')
+    };
+    if (divscaroussel[i].nextElementSibling == null) {
+        divscaroussel[i].classList.remove('visible')
+        divscaroussel[i].classList.add('invisible')
+        puces[i].classList.remove('pucebleu')
+        divscaroussel[i].parentElement.firstElementChild.classList.remove('invisible')
+        divscaroussel[i].parentElement.firstElementChild.classList.add('visible')
+        puces[i].parentElement.firstElementChild.classList.add('pucebleu')
+        i = -1
+    }
+    
+    i++
+    
+    
+}
+
+let interval = setInterval(() => {
+    test()
+}, 2000);
+
+puce3.addEventListener('click',()=>{
+    puces.forEach(element => {
+        element.classList.remove('pucebleu')
+    });
+    puce3.classList.add('pucebleu')
+    divscaroussel.forEach(element => {
+        element.classList.remove(('visible'))
+        element.classList.add(('invisible'))
+    });
+    div3.classList.remove('invisible')
+    div3.classList.add('visible')
+    i=2
+    clearInterval(interval)
+    interval = setInterval(() => {
+    test()
+}, 2000);
+    
+
+})
+puce1.addEventListener('click',()=>{
+    puces.forEach(element => {
+        element.classList.remove('pucebleu')
+    });
+    puce1.classList.add('pucebleu')
+    divscaroussel.forEach(element => {
+        element.classList.remove(('visible'))
+        element.classList.add(('invisible'))
+    });
+    div1.classList.remove('invisible')
+    div1.classList.add('visible')
+    i=0
+    clearInterval(interval)
+    interval = setInterval(() => {
+    test()
+}, 2000);
+    
+
+})
+puce2.addEventListener('click',()=>{
+    puces.forEach(element => {
+        element.classList.remove('pucebleu')
+    });
+    puce2.classList.add('pucebleu')
+    divscaroussel.forEach(element => {
+        element.classList.remove(('visible'))
+        element.classList.add(('invisible'))
+    });
+    div2.classList.remove('invisible')
+    div2.classList.add('visible')
+    i=1
+   
+    clearInterval(interval)
+    interval = setInterval(() => {
+    test()
+}, 2000);
+
+})
+puce4.addEventListener('click',()=>{
+    puces.forEach(element => {
+        element.classList.remove('pucebleu')
+    });
+    puce4.classList.add('pucebleu')
+    divscaroussel.forEach(element => {
+        element.classList.remove(('visible'))
+        element.classList.add(('invisible'))
+    });
+    div4.classList.remove('invisible')
+    div4.classList.add('visible')
+    i=3
+
+   clearInterval(interval)
+    interval = setInterval(() => {
+    test()
+}, 2000);
+    
+
+})
+
+// Customer
+
+document.getElementsByClassName('customer')[0].addEventListener('mouseover',()=>{
+    document.getElementsByClassName('customer')[0].style.color = 'white'
+    document.getElementsByClassName('customer')[0].style.backgroundColor = '#dd4545'
+    document.querySelectorAll('.customer >p')[0].style.color='white'
+    document.querySelectorAll('.customer >span')[0].style.color='white'
+    document.getElementsByClassName('bouton')[0].style.backgroundColor='white'
+    document.getElementsByClassName('bouton')[0].style.color='#343a40'
+
+})
+document.getElementsByClassName('customer')[0].addEventListener('mouseout',()=>{
+    document.getElementsByClassName('customer')[0].style.color = '#343a40'
+    document.getElementsByClassName('customer')[0].style.backgroundColor = '#f3f2f3'
+    document.querySelectorAll('.customer >p')[0].style.color='#b3adad'
+    document.querySelectorAll('.customer >span')[0].style.color='#343a40'
+    document.getElementsByClassName('bouton')[0].style.backgroundColor='#343a40'
+    document.getElementsByClassName('bouton')[0].style.color='white'
+})
+document.getElementsByClassName('customer')[1].addEventListener('mouseover',()=>{
+    document.getElementsByClassName('customer')[1].style.color = 'white'
+    document.getElementsByClassName('customer')[1].style.backgroundColor = '#dd4545'
+    document.querySelectorAll('.customer >p')[1].style.color='white'
+    document.querySelectorAll('.customer >span')[1].style.color='white'
+    document.getElementsByClassName('bouton')[1].style.backgroundColor='white'
+    document.getElementsByClassName('bouton')[1].style.color='#343a40'
+
+})
+document.getElementsByClassName('customer')[1].addEventListener('mouseout',()=>{
+    document.getElementsByClassName('customer')[1].style.color = '#343a40'
+    document.getElementsByClassName('customer')[1].style.backgroundColor = '#f3f2f3'
+    document.querySelectorAll('.customer >p')[1].style.color='#b3adad'
+    document.querySelectorAll('.customer >span')[1].style.color='#343a40'
+    document.getElementsByClassName('bouton')[1].style.backgroundColor='#343a40'
+    document.getElementsByClassName('bouton')[1].style.color='white'
+})
+document.getElementsByClassName('customer')[2].addEventListener('mouseover',()=>{
+    document.getElementsByClassName('customer')[2].style.color = 'white'
+    document.getElementsByClassName('customer')[2].style.backgroundColor = '#dd4545'
+    document.querySelectorAll('.customer >p')[2].style.color='white'
+    document.querySelectorAll('.customer >span')[2].style.color='white'
+    document.getElementsByClassName('bouton')[2].style.backgroundColor='white'
+    document.getElementsByClassName('bouton')[2].style.color='#343a40'
+
+})
+document.getElementsByClassName('customer')[2].addEventListener('mouseout',()=>{
+    document.getElementsByClassName('customer')[2].style.color = '#343a40'
+    document.getElementsByClassName('customer')[2].style.backgroundColor = '#f3f2f3'
+    document.querySelectorAll('.customer >p')[2].style.color='#b3adad'
+    document.querySelectorAll('.customer >span')[2].style.color='#343a40'
+    document.getElementsByClassName('bouton')[2].style.backgroundColor='#343a40'
+    document.getElementsByClassName('bouton')[2].style.color='white'
+})
+
 
