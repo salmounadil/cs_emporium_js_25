@@ -259,6 +259,8 @@ h1 {
 
 .tien {
   overflow: hidden;
+  width: 320px;
+  height: 320px;
 }
 
 .imgsection33 {
@@ -268,9 +270,9 @@ h1 {
 }
 
 .imgsection33:hover {
+  transition: all 1s;
   width: 105%;
   height: 105%;
-  transition: all 1s;
 }
 
 .span1 {
