@@ -522,5 +522,35 @@ li {
     width: 120%;
   }
 }
+@media screen and (max-width: 1836px) {
+  .customer {
+    width: 530px !important;
+  }
+}
+@media screen and (max-width: 1690px) {
+  .customer {
+    width: 500px !important;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .customer {
+    width: 450px !important;
+  }
+}
+@media screen and (max-width: 1447px) {
+  .customer {
+    width: 400px !important;
+  }
+}
+@media screen and (max-width: 1297px) {
+  .customer {
+    width: 350px !important;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .customer {
+    width: 300px !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

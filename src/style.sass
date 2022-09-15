@@ -1,4 +1,5 @@
-@import _font.sass
+@import _font
+@import _variable
 
 body
     font-family: police
@@ -94,10 +95,10 @@ h1
 .psection1
     color: #838a90
 .h1section1
-    color: #dd4545
+    color: $red
     font-weight: 100
 .boutonitems
-    background-color: #dd4545
+    background-color: $red
     color: white
     padding: 2%
     padding-left: 6%
@@ -223,12 +224,12 @@ h1
 .span2
     font-weight: 700
     font-size: 120%
-    color: #dd4545
+    color: $red
 .prixbarre
     color: #6c757e
     text-decoration: line-through
 .sale
-    background-color: #dd4545
+    background-color: $red
     width: 65px
     height: 65px
     border-radius: 50%
@@ -259,7 +260,7 @@ h1
 .learn
     z-index: 1
     color: white
-    background-color: #dd4545
+    background-color: $red
     padding: 10px
     border-radius: 5px
     margin: 20px
@@ -413,4 +414,29 @@ li
 
     .imgsection3
         width: 120%
+
+@media screen and (max-width:1836px) 
+    .customer
+        width: 530px !important
+    
+@media screen and (max-width:1690px) 
+    .customer
+        width: 500px !important
+    
+@media screen and (max-width:1600px) 
+    .customer
+        width: 450px !important
+    
+@media screen and (max-width:1447px) 
+    .customer
+        width: 400px !important
+    
+    
+@media screen and (max-width:1297px) 
+    .customer
+        width: 350px !important
+    
+@media screen and (max-width:1150px) 
+    .customer
+        width: 300px !important
     
