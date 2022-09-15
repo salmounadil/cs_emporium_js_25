@@ -121,6 +121,7 @@ vari.divproduct7.classList.add('col-3','divimgsection3','d-flex','justify-conten
 vari.divproduct8.classList.add('col-3','divimgsection3','d-flex','justify-content-center','flex-column','align-items-center')
 vari.divproduct9.classList.add('col-3','divimgsection3','d-flex','justify-content-center','flex-column','align-items-center')
 vari.imgproduct1.classList.add('imgsection3')
+
 vari.imgproduct2.classList.add('imgsection3')
 vari.imgproduct3.classList.add('imgsection3')
 vari.imgproduct4.classList.add('imgsection3')
@@ -129,15 +130,115 @@ vari.imgproduct6.classList.add('imgsection3')
 vari.imgproduct7.classList.add('imgsection3')
 vari.imgproduct8.classList.add('imgsection3')
 vari.imgproduct9.classList.add('imgsection3')
-vari.span1product1.classList.add('span1','m-2','mt-3')
-vari.span1product2.classList.add('span1','m-2','mt-3')
-vari.span1product3.classList.add('span1','m-2','mt-3')
-vari.span1product4.classList.add('span1','m-2','mt-3')
-vari.span1product5.classList.add('span1','m-2','mt-3')
-vari.span1product6.classList.add('span1','m-2','mt-3')
-vari.span1product7.classList.add('span1','m-2','mt-3')
-vari.span1product8.classList.add('span1','m-2','mt-3')
-vari.span1product9.classList.add('span1','m-2','mt-3')
+
+// Image qui s'agrandit
+
+vari.imgproduct1.addEventListener('mouseover',()=>{
+    vari.imgproduct1.style.transition = 'all 1s'
+    vari.imgproduct1.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct1.addEventListener('mouseout',()=>{
+    vari.imgproduct1.style.transition = 'all 1s'
+    vari.imgproduct1.style.transform = 'scale(1)'
+    
+})
+vari.imgproduct2.addEventListener('mouseover',()=>{
+    vari.imgproduct2.style.transition = 'all 1s'
+    vari.imgproduct2.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct2.addEventListener('mouseout',()=>{
+    vari.imgproduct2.style.transition = 'all 1s'
+    vari.imgproduct2.style.transform = 'scale(1)'
+    
+})
+
+vari.imgproduct3.addEventListener('mouseover',()=>{
+    vari.imgproduct3.style.transition = 'all 1s'
+    vari.imgproduct3.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct3.addEventListener('mouseout',()=>{
+    vari.imgproduct3.style.transition = 'all 1s'
+    vari.imgproduct3.style.transform = 'scale(1)'
+    
+})
+vari.imgproduct4.addEventListener('mouseover',()=>{
+    vari.imgproduct4.style.transition = 'all 1s'
+    vari.imgproduct4.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct4.addEventListener('mouseout',()=>{
+    vari.imgproduct4.style.transition = 'all 1s'
+    vari.imgproduct4.style.transform = 'scale(1)'
+    
+})
+vari.imgproduct5.addEventListener('mouseover',()=>{
+    vari.imgproduct5.style.transition = 'all 1s'
+    vari.imgproduct5.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct5.addEventListener('mouseout',()=>{
+    vari.imgproduct5.style.transition = 'all 1s'
+    vari.imgproduct5.style.transform = 'scale(1)'
+    
+})
+vari.imgproduct6.addEventListener('mouseover',()=>{
+    vari.imgproduct6.style.transition = 'all 1s'
+    vari.imgproduct6.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct6.addEventListener('mouseout',()=>{
+    vari.imgproduct6.style.transition = 'all 1s'
+    vari.imgproduct6.style.transform = 'scale(1)'
+    
+})
+
+vari.imgproduct7.addEventListener('mouseover',()=>{
+    vari.imgproduct7.style.transition = 'all 1s'
+    vari.imgproduct7.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct7.addEventListener('mouseout',()=>{
+    vari.imgproduct7.style.transition = 'all 1s'
+    vari.imgproduct7.style.transform = 'scale(1)'
+    
+})
+
+vari.imgproduct8.addEventListener('mouseover',()=>{
+    vari.imgproduct8.style.transition = 'all 1s'
+    vari.imgproduct8.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct8.addEventListener('mouseout',()=>{
+    vari.imgproduct8.style.transition = 'all 1s'
+    vari.imgproduct8.style.transform = 'scale(1)'
+    
+})
+vari.imgproduct9.addEventListener('mouseover',()=>{
+    vari.imgproduct9.style.transition = 'all 1s'
+    vari.imgproduct9.style.transform = 'scale(1.05)'
+ 
+})
+vari.imgproduct9.addEventListener('mouseout',()=>{
+    vari.imgproduct9.style.transition = 'all 1s'
+    vari.imgproduct9.style.transform = 'scale(1)'
+    
+})
+
+
+
+
+vari.span1product1.classList.add('span1','m-2','mt-2')
+vari.span1product2.classList.add('span1','m-2','mt-2')
+vari.span1product3.classList.add('span1','m-2','mt-2')
+vari.span1product4.classList.add('span1','m-2','mt-2')
+vari.span1product5.classList.add('span1','m-2','mt-2')
+vari.span1product6.classList.add('span1','m-2','mt-2')
+vari.span1product7.classList.add('span1','m-2','mt-2')
+vari.span1product8.classList.add('span1','m-2','mt-2')
+vari.span1product9.classList.add('span1','m-2','mt-2')
 vari.span2product1.classList.add('span2','mb-2')
 vari.span2product2.classList.add('span2','mb-2')
 vari.span2product3.classList.add('span2','mb-2')
@@ -158,11 +259,7 @@ vari.etiquette2.classList.add('etiquette','d-flex')
 vari.prixbarre1.classList.add('prixbarre')
 vari.prixbarre2.classList.add('prixbarre')
 document.getElementsByTagName('main')[0].insertBefore(vari.section3,document.getElementsByTagName('section')[2])
-vari.divproduct1.addEventListener('click',()=>{
-vari.imgproduct1.style.width ='500%'
-vari.divproduct1.style.overflow ='hidden'
 
-})
 
 // Caroussel
 
@@ -177,63 +274,9 @@ let puce4 = document.getElementsByClassName('puce4')[0]
 let divscaroussel = document.querySelectorAll('.caroussel > div')
 let puces = document.querySelectorAll('.puces > div')
 
-
-// console.log(div1.previousElementSibling == null);
-
-// setInterval(myCallback, 500, 'Parameter 1', 'Parameter 2');
-
-// ;
-// let slider = ()=>{
-    
-     
-//    divscaroussel.forEach(element => {
-    
-//        if (element.nextElementSibling != null) {
-        
-//             element.classList.remove('visible')
-//         element.classList.add('invisible')
-//         element.nextElementSibling.classList.add('visible')
-//         element.nextElementSibling.classList.remove('invisible')
-//         console.log('pas dernier');
-        
-        
-        
-//        } ;
-//        if (element.nextElementSibling == null) {
-        
-//             element.classList.remove('visible')
-//         element.classList.add('invisible')
-//         div1.classList.remove('invisible')
-//         div1.classList.add('visible')
-//         console.log('dernier');
-       
-        
-//     }
-//        })
-       
-    
-   
-//     }
-
-// setInterval(slider, 1000);
-
-let tab = [1,2,3]
-
-// let log =()=>{
-//     i.forEach(element => {
-//         setTimeout(() => {
-//             console.log(element);
-//         }, 1000);
-//     });
-// }
-// setInterval(() => {
-//     log()
-// }, 500);
-
-// slider()
 let i = 0
 
-let test = ()=>{
+let slider = ()=>{
     if (divscaroussel[i].nextElementSibling != null) {
         divscaroussel.forEach(element => {
             element.classList.remove(('visible'))
@@ -265,28 +308,10 @@ let test = ()=>{
 }
 
 let interval = setInterval(() => {
-    test()
+    slider()
 }, 2000);
 
-puce3.addEventListener('click',()=>{
-    puces.forEach(element => {
-        element.classList.remove('pucebleu')
-    });
-    puce3.classList.add('pucebleu')
-    divscaroussel.forEach(element => {
-        element.classList.remove(('visible'))
-        element.classList.add(('invisible'))
-    });
-    div3.classList.remove('invisible')
-    div3.classList.add('visible')
-    i=2
-    clearInterval(interval)
-    interval = setInterval(() => {
-    test()
-}, 2000);
-    
 
-})
 puce1.addEventListener('click',()=>{
     puces.forEach(element => {
         element.classList.remove('pucebleu')
@@ -301,7 +326,7 @@ puce1.addEventListener('click',()=>{
     i=0
     clearInterval(interval)
     interval = setInterval(() => {
-    test()
+    slider()
 }, 2000);
     
 
@@ -321,10 +346,32 @@ puce2.addEventListener('click',()=>{
    
     clearInterval(interval)
     interval = setInterval(() => {
-    test()
+    slider()
 }, 2000);
 
 })
+
+puce3.addEventListener('click',()=>{
+    puces.forEach(element => {
+        element.classList.remove('pucebleu')
+    });
+    puce3.classList.add('pucebleu')
+    divscaroussel.forEach(element => {
+        element.classList.remove(('visible'))
+        element.classList.add(('invisible'))
+    });
+    div3.classList.remove('invisible')
+    div3.classList.add('visible')
+    i=2
+    clearInterval(interval)
+    interval = setInterval(() => {
+    slider()
+}, 2000);
+    
+
+}) 
+
+
 puce4.addEventListener('click',()=>{
     puces.forEach(element => {
         element.classList.remove('pucebleu')
@@ -340,7 +387,7 @@ puce4.addEventListener('click',()=>{
 
    clearInterval(interval)
     interval = setInterval(() => {
-    test()
+    slider()
 }, 2000);
     
 
@@ -401,3 +448,136 @@ document.getElementsByClassName('customer')[2].addEventListener('mouseout',()=>{
 })
 
 
+// Mode nuit
+let mode;
+document.getElementsByClassName('modesombre')[0].addEventListener('click',()=>{
+    document.getElementsByClassName('inscription')[0].classList.remove('modaljouractive')
+    document.getElementsByClassName('connexion')[0].classList.remove('modaljouractive')
+    document.getElementsByClassName('inscription')[0].classList.add('modalnuitactive')
+    document.getElementsByClassName('connexion')[0].classList.add('modalnuitactive')
+    mode = 'sombre'
+    document.getElementsByTagName('body')[0].classList.remove('modejouractive')
+    document.getElementsByTagName('body')[0].classList.add('modesombreactive')
+    document.getElementsByClassName('barNav')[0].classList.remove('modejouractive') 
+    document.getElementsByClassName('barNav')[0].classList.add('modesombreactive') 
+    document.querySelectorAll(' a').forEach(element => {
+        element.classList.remove('modejouractive')
+        element.classList.add('modesombreactive')
+    });
+    document.querySelectorAll('.fonta').forEach(element => {
+        element.style.color = 'black'
+    });
+    
+})
+
+
+// Mode jour
+
+document.getElementsByClassName('modejour')[0].addEventListener('click',()=>{
+    document.getElementsByClassName('inscription')[0].classList.remove('modalnuitactive')
+    document.getElementsByClassName('connexion')[0].classList.remove('modalnuitactive')
+    document.getElementsByClassName('inscription')[0].classList.add('modaljouractive')
+    document.getElementsByClassName('connexion')[0].classList.add('modaljouractive')
+    mode = 'jour'
+    document.getElementsByTagName('body')[0].classList.remove('modesombreactive')
+    document.getElementsByTagName('body')[0].classList.add('modejouractive')
+    document.getElementsByClassName('barNav')[0].classList.remove('modesombreactive') 
+    document.getElementsByClassName('barNav')[0].classList.add('modejouractive') 
+    document.querySelectorAll(' a').forEach(element => {
+        element.classList.remove('modesombreactive')
+        element.classList.add('modejouractive')
+    });
+    document.querySelectorAll('.fonta').forEach(element => {
+        element.style.color = 'black'
+    });
+    
+})
+
+// Modal Connexion
+
+document.getElementsByClassName('boutonConnexion')[0].addEventListener('click',()=>{
+//    document.classList.add('brightness')
+    // document.getElementsByTagName('footer')[0].classList.add('brightness')
+    // document.getElementsByTagName('header')[0].classList.add('brightness')
+    // document.getElementsByTagName('main')[0].classList.add('brightness')
+    document.getElementsByTagName('html')[0].classList.add('html');
+    document.getElementsByClassName('connexion')[0].classList.remove('invisible')
+    document.getElementsByClassName('connexion')[0].classList.add('visible')
+})
+
+document.getElementsByClassName('lieninscr')[0].addEventListener('click',()=>{
+    document.getElementsByTagName('html')[0].classList.add('html');
+    document.getElementsByClassName('connexion')[0].classList.remove('visible')
+    document.getElementsByClassName('connexion')[0].classList.add('invisible')
+    document.getElementsByClassName('inscription')[0].classList.remove('invisible')
+    document.getElementsByClassName('inscription')[0].classList.add('visible')
+})
+document.getElementsByClassName('lienconn')[0].addEventListener('click',()=>{
+    document.getElementsByTagName('html')[0].classList.add('html');
+    document.getElementsByClassName('connexion')[0].classList.remove('invisible')
+    document.getElementsByClassName('connexion')[0].classList.add('visible')
+    document.getElementsByClassName('inscription')[0].classList.remove('visible')
+    document.getElementsByClassName('inscription')[0].classList.add('invisible')
+})
+
+
+document.getElementsByClassName('croixi')[0].addEventListener('click',()=>{
+    document.getElementsByTagName('html')[0].classList.remove('html');
+    document.getElementsByClassName('inscription')[0].classList.remove('visible')
+    document.getElementsByClassName('inscription')[0].classList.add('invisible')
+})
+document.getElementsByClassName('croixc')[0].addEventListener('click',()=>{
+    document.getElementsByTagName('html')[0].classList.remove('html');
+    document.getElementsByClassName('connexion')[0].classList.remove('visible')
+    document.getElementsByClassName('connexion')[0].classList.add('invisible')
+})
+
+// document.getElementsByTagName('html')[0].addEventListener('click',()=>{
+//     if (document.getElementsByClassName('inscription')[0].classList.contains('visible')) {
+//         document.getElementsByClassName('inscription')[0].classList.remove('visible')
+//         document.getElementsByClassName('inscription')[0].classList.add('invisible')
+//     }
+//     if (document.getElementsByClassName('connexion')[0].classList.contains('visible')) {
+//         document.getElementsByClassName('connexion')[0].classList.remove('visible')
+//         document.getElementsByClassName('connexion')[0].classList.add('invisible')
+//     }
+// })
+
+
+window.addEventListener('click',(event)=>{
+    if ((event.target != document.getElementsByClassName('boutonConnexion')[0])&& (event.target != document.getElementsByTagName('input')[0]) && (event.target != document.getElementsByTagName('input')[1]) && (event.target != document.getElementsByTagName('input')[2])&& (event.target != document.getElementsByTagName('input')[3]) && (event.target != document.getElementsByTagName('input')[4]) && (event.target != document.getElementsByTagName('input')[5]) && (event.target != document.getElementsByTagName('input')[6]) && (event.target != document.getElementsByTagName('input')[7]) && (event.target != document.getElementsByClassName('divcroix')[0])&& (event.target != document.getElementsByClassName('btnconect')[0]) && (event.target != document.getElementsByClassName('btnconect')[1]) && (event.target != document.getElementsByClassName('divcroix')[1]) && (event.target != document.getElementsByClassName('connexion')[0]) && (event.target != document.getElementsByClassName('inscription')[0] )&& (event.target != document.getElementsByTagName('h2')[0] ) && (event.target != document.getElementsByTagName('h2')[1] ) &&(event.target != document.getElementsByClassName('lieninscr')[0] )&& (event.target != document.getElementsByClassName('lienconn')[0] )) {
+        if (document.getElementsByClassName('inscription')[0].classList.contains('visible')) {
+                    document.getElementsByClassName('inscription')[0].classList.remove('visible')
+                    document.getElementsByClassName('inscription')[0].classList.add('invisible')
+                    document.getElementsByTagName('html')[0].classList.remove('html');
+                }
+                if (document.getElementsByClassName('connexion')[0].classList.contains('visible')) {
+                    document.getElementsByClassName('connexion')[0].classList.remove('visible')
+                    document.getElementsByClassName('connexion')[0].classList.add('invisible')
+                    document.getElementsByTagName('html')[0].classList.remove('html');
+                }
+    };
+})
+
+
+// document.getElementsByTagName('header')[0].addEventListener("visibilitychange", () => {
+//     if (document.getElementsByTagName('header')[0].visibilityState === 'visible') {
+//       document.getElementsByClassName('barNav')[0].classList.remove('opacity')
+//     } else {
+//         document.getElementsByClassName('barNav')[0].classList.add('opacity')
+//     }
+//   });
+
+  window.onscroll=()=>{
+    document.getElementsByClassName('barNav')[0].classList.add('opacity')
+  }
+//   window.onscroll=()=>{
+    // document.getElementsByClassName('barNav')[0].classList.remove('opacity')
+//   }
+
+document.getElementsByClassName('barNav')[0].addEventListener('mouseover',()=>{
+    document.getElementsByClassName('barNav')[0].classList.remove('opacity')
+})
+document.getElementsByClassName('barNav')[0].addEventListener('mouseout',()=>{
+    document.getElementsByClassName('barNav')[0].classList.add('opacity')
+})
