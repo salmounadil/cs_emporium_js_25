@@ -444,6 +444,14 @@ li {
   font-weight: 700;
 }
 
+.boutonNav {
+  background-color: black;
+}
+
+.spanNav {
+  background-color: white !important;
+}
+
 @media screen and (max-width: 1200px) {
   .divimg1 {
     margin: 5px;
@@ -476,6 +484,17 @@ li {
   .spansection2 {
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .spansection2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .divsection1 {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 500px) {
