@@ -581,3 +581,5 @@ document.getElementsByClassName('barNav')[0].addEventListener('mouseover',()=>{
 document.getElementsByClassName('barNav')[0].addEventListener('mouseout',()=>{
     document.getElementsByClassName('barNav')[0].classList.add('opacity')
 })
+
+// Adil Salmoun
