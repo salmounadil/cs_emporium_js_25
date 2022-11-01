@@ -276,7 +276,7 @@ let puces = document.querySelectorAll('.puces > div')
 
 let i = 0
 
-let slider = ()=>{
+let slider = () => {
     if (divscaroussel[i].nextElementSibling != null) {
         divscaroussel.forEach(element => {
             element.classList.remove(('visible'))
@@ -296,15 +296,15 @@ let slider = ()=>{
         divscaroussel[i].classList.remove('visible')
         divscaroussel[i].classList.add('invisible')
         puces[i].classList.remove('pucebleu')
-        divscaroussel[i].parentElement.firstElementChild.classList.remove('invisible')
-        divscaroussel[i].parentElement.firstElementChild.classList.add('visible')
+        divscaroussel[0].classList.remove('invisible')
+        divscaroussel[0].classList.add('visible')
         puces[i].parentElement.firstElementChild.classList.add('pucebleu')
         i = -1
     }
-    
+
     i++
-    
-    
+
+
 }
 
 let interval = setInterval(() => {
@@ -370,7 +370,13 @@ puce3.addEventListener('click',()=>{
     
 
 }) 
+const isBelowThreshold = (currentValue) => currentValue < 30;
 
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+
+// expected output: true
 
 puce4.addEventListener('click',()=>{
     puces.forEach(element => {
@@ -583,3 +589,4 @@ document.getElementsByClassName('barNav')[0].addEventListener('mouseout',()=>{
 })
 
 // Adil Salmoun
+
